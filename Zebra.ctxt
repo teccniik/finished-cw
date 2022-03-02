@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Zebra
+comment0.text=\r\n\ A\ simple\ model\ of\ a\ Zebra.\r\n\ Zebras\ age,\ move,\ eat\ zebras,\ and\ die.\r\n\ \r\n\ @author\ David\ J.\ Barnes\ and\ Michael\ K\u00F6lling\r\n\ @version\ 2016.02.29\ (2)\r\n
+comment1.params=randomAge\ field\ location\ BREEDING_AGE\ MAX_AGE\ BREEDING_PROBABILITY\ MAX_LITTER_SIZE
+comment1.target=Zebra(boolean,\ Field,\ Location,\ int,\ int,\ double,\ int)
+comment1.text=\r\n\ Create\ a\ Zebra.\ A\ Zebra\ can\ be\ created\ as\ a\ new\ born\ (age\ zero\r\n\ and\ not\ hungry)\ or\ with\ a\ random\ age\ and\ food\ level.\r\n\ \r\n\ @param\ randomAge\ If\ true,\ the\ Zebra\ will\ have\ random\ age\ and\ hunger\ level.\r\n\ @param\ field\ The\ field\ currently\ occupied.\r\n\ @param\ location\ The\ location\ within\ the\ field.\r\n
+comment2.params=newZebras
+comment2.target=void\ act(java.util.List)
+comment2.text=\r\n\ This\ is\ what\ the\ Zebra\ does\ most\ of\ the\ time\:\ it\ hunts\ for\r\n\ zebras.\ In\ the\ process,\ it\ might\ breed,\ die\ of\ hunger,\r\n\ or\ die\ of\ old\ age.\r\n\ @param\ field\ The\ field\ currently\ occupied.\r\n\ @param\ newZebras\ A\ list\ to\ return\ newly\ born\ Zebras.\r\n
+comment3.params=
+comment3.target=void\ incrementHunger()
+comment3.text=\r\n\ Increment\ the\ Zebra's\ hunger.\ The\ Zebra\ could\ die\ from\ this.\r\n
+comment4.params=
+comment4.target=Location\ findFood()
+comment4.text=\r\n\ Look\ for\ zebra\ adjacent\ to\ the\ current\ location.\r\n\ Only\ the\ first\ live\ zebra\ is\ eaten.\r\n\ @return\ Where\ food\ was\ found,\ or\ null\ if\ it\ wasn't.\r\n
+comment5.params=newZebras
+comment5.target=void\ giveBirth(java.util.List)
+comment5.text=\r\n\ Check\ whether\ or\ not\ this\ Zebra\ is\ to\ give\ birth\ at\ this\ step.\r\n\ New\ births\ will\ be\ made\ into\ free\ adjacent\ locations.\r\n\ @param\ newZebras\ A\ list\ to\ return\ newly\ born\ Zebras.\r\n
+numComments=6

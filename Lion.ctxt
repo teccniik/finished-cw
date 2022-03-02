@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Lion
+comment0.text=\r\n\ A\ simple\ model\ of\ a\ Lion.\r\n\ Lions\ age,\ move,\ eat\ zebras,\ and\ die.\r\n\ \r\n\ @author\ David\ J.\ Barnes\ and\ Michael\ K\u00F6lling\r\n\ @version\ 2016.02.29\ (2)\r\n
+comment1.params=randomAge\ field\ location\ BREEDING_AGE\ MAX_AGE\ BREEDING_PROBABILITY\ MAX_LITTER_SIZE
+comment1.target=Lion(boolean,\ Field,\ Location,\ int,\ int,\ double,\ int)
+comment1.text=\r\n\ Create\ a\ Lion.\ A\ Lion\ can\ be\ created\ as\ a\ new\ born\ (age\ zero\r\n\ and\ not\ hungry)\ or\ with\ a\ random\ age\ and\ food\ level.\r\n\ \r\n\ @param\ randomAge\ If\ true,\ the\ Lion\ will\ have\ random\ age\ and\ hunger\ level.\r\n\ @param\ field\ The\ field\ currently\ occupied.\r\n\ @param\ location\ The\ location\ within\ the\ field.\r\n
+comment2.params=newLions
+comment2.target=void\ act(java.util.List)
+comment2.text=\r\n\ This\ is\ what\ the\ Lion\ does\ most\ of\ the\ time\:\ it\ hunts\ for\r\n\ zebras.\ In\ the\ process,\ it\ might\ breed,\ die\ of\ hunger,\r\n\ or\ die\ of\ old\ age.\r\n\ @param\ field\ The\ field\ currently\ occupied.\r\n\ @param\ newLions\ A\ list\ to\ return\ newly\ born\ Lions.\r\n
+comment3.params=
+comment3.target=Location\ findFood()
+comment3.text=\r\n\ Look\ for\ zebra\ adjacent\ to\ the\ current\ location.\r\n\ Only\ the\ first\ live\ zebra\ is\ eaten.\r\n\ @return\ Where\ food\ was\ found,\ or\ null\ if\ it\ wasn't.\r\n
+comment4.params=newLions
+comment4.target=void\ giveBirth(java.util.List)
+comment4.text=\r\n\ Check\ whether\ or\ not\ this\ Lion\ is\ to\ give\ birth\ at\ this\ step.\r\n\ New\ births\ will\ be\ made\ into\ free\ adjacent\ locations.\r\n\ @param\ newLions\ A\ list\ to\ return\ newly\ born\ Lions.\r\n
+comment5.params=
+comment5.target=void\ incrementHunger()
+comment5.text=\r\n\ Increment\ Lion's\ hunger.\ This\ could\ reduce\ in\ the\ Lion's\ death.\r\n
+numComments=6
